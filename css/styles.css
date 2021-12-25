@@ -862,6 +862,14 @@ img {
 .form-checkbox:focus + .form-cb::before {
   border: 2px solid var(--primery-color);
 }
+.form-checkbox:hover + .form-cb::before {
+  transition-property: border;
+  transition-duration: var(--time);
+  transition-timing-function: var(--time-f);
+}
+.form-checkbox:hover + .form-cb::before {
+  border: 2px solid var(--primery-color);
+}
 .form-checkbox {
   position: absolute;
   width: 1px;
