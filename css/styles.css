@@ -127,7 +127,7 @@ img {
   bottom: -36px;
   background-color: currentColor;
   border-radius: 2px;
-  transition-property: translateY(100%), background-color;
+  transition-property: translateY(100%);
   transition-duration: var(--time);
   transition-timing-function: var(--time-f);
 }
@@ -271,6 +271,7 @@ img {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+
 .footer-contact.area {
   color: #ffffff;
 }
@@ -289,6 +290,11 @@ img {
   text-align: left;
   color: #ffffff;
   padding: 0;
+}
+.style-subscribe {
+  display: flex;
+  flex-direction: column;
+  padding: 72px 0 0 0;
 }
 .style-subscribe > .heading-second {
   font-family: var(--primery-font);
@@ -626,7 +632,7 @@ img {
   display: flex;
   flex-direction: column;
   padding: 60px 70px 60px 0px;
-  /* width: 400px; */
+  width: 400px;
 }
 .footer-box-index > .container > .style > .logo {
   padding-bottom: 20px;
@@ -640,11 +646,11 @@ img {
   padding-left: 0;
   margin: 0;
 }
+
 .link-contact:not(:last-child) {
   margin: 0px 0px 9px 0px;
 }
-.style-join,
-.style-subscribe {
+.style-join {
   display: flex;
   flex-direction: column;
   padding: 72px 93px 0 0;
@@ -652,7 +658,7 @@ img {
 .join-socials {
   display: flex;
   justify-content: center;
-  margin: 20px 10px 0px 0px;
+  margin: 20px 0px 0px 0px;
   padding: 0;
 }
 .join-socials li:not(:last-child) {
@@ -677,6 +683,10 @@ img {
 .join-social-link:focus {
   background-color: var(--primery-color);
 }
+.footer-form {
+  display: flex;
+  align-items: center;
+}
 .footer-lable {
   display: flex;
   margin-top: 20px;
@@ -690,7 +700,7 @@ img {
   padding: 15px 0px 15px 16px;
   background: inherit;
   margin-right: 12px;
-  /* outline: none; */
+  color: rgba(255, 255, 255, 0.6);
 }
 .footer-email::placeholder {
   font-size: 16px;
@@ -702,6 +712,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
 }
 .footer-button-subscribe span {
   margin-right: 10px;
@@ -866,6 +877,7 @@ img {
   transition-property: border;
   transition-duration: var(--time);
   transition-timing-function: var(--time-f);
+  cursor: pointer;
 }
 .form-checkbox:hover + .form-cb::before {
   border: 2px solid var(--primery-color);
